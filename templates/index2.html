@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Information</title>
+  <link rel="stylesheet" href="static\styles\styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="weather-container">
+      <form method="post" class="search-form">
+        <input type="text" class="search-input" placeholder="Search">
+        <button type="submit" class="search-button">Search</button>
+      </form>
+        <div class="weather-now">{{data.cityname}}</div>
+    <div class="temperature-feelslike">
+      <span class="temperature">{{data.temp}}</span>
+      <span class="feels-like">Feels like {{data.feels_like}}</span>
+    </div>
+    <div class="weather-description">{{data.description}}</div>
+    <div class="precip-humidity-wind">
+      <span class="precip">Precip: 0%</span><br>
+      <span class="humidity">Humidity: {{data.humidity}}</span><br>
+      <span class="wind">Wind: {{data.wind}}</span>
+    </div>
+  </div>
+</body>
+</html>
