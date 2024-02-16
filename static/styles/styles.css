@@ -1,83 +1,89 @@
 .weather-container {
-    border: 1px solid #ccc;
-    padding: 15px;
-    width: 50%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    position: relative;
-    background: #c6c1c1;
-  }
-  
-  .location {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .weather-now {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .temperature-feelslike {
-    margin-bottom: 5px;
-  }
-  
-  .temperature,
-  .feels-like {
-    display: block;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 3px;
-  }
-  .feels-like {
-    font-size: 18px; /* Adjust the font size as needed */
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 50%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background: #c6c1c1;
 }
-  .search-form {
-    margin-bottom: 10px;
-  }
-  
-  .search-input {
-    padding: 5px;
-    font-size: 14px;
-    width: 50%;
-  }
-  
-  .search-button {
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-button:hover {
-    background-color: #0069d9;
-  }
-  
-  .weather-description {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .precip-humidity-wind {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .precip,
-  .humidity,
-  .wind,
-  .icon {
-    margin-bottom: 5px;
-    margin: right 35px;
-  }
-.icon_img{
-margin-bottom: 5px;
-transform: scale(1.2);
+
+.location {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather-now {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.temperature-feelslike {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.temperature,
+.feels-like {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.feels-like {
+  font-size: 18px;
+  /* Adjust the font size as needed */
+}
+
+.search-form {
+  margin-bottom: 10px;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 14px;
+  width: 50%;
+}
+
+.search-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0069d9;
+}
+
+.weather-description {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.precip-humidity-wind {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.precip,
+.humidity,
+.wind,
+.icon {
+  margin-bottom: 5px;
+  margin: right 55px;
+}
+
+.icon_img {
+  margin-bottom: 5px;
+  transform: scale(1.2);
 }

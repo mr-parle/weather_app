@@ -49,7 +49,7 @@ def weather():
         "country_code": str(list_of_data['sys']['country']), 
         "sunrise": str(formatted_sunset),
         "sunrset": str(formatted_sunrise),
-        "temp": str(round(temperature_celsius, 2)) + '°C',
+        "temp": str(round(temperature_celsius, 0)) + '°C',
         "pressure": str(list_of_data['main']['pressure']), 
         "humidity": str(list_of_data['main']['humidity']) + '%', 
         "feels_like": str(round(temperature_celsius, 2)) + '°C',

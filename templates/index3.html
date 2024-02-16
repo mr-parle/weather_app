@@ -21,8 +21,6 @@
    
     <form method="post" class="col-md-6 col-md-offset-3">
       <div class="input-group">
-        
-        </div>
       </div>
     <form>
     
@@ -35,14 +33,15 @@
                 <i class="glyphicon glyphicon-search"></i>
               </button>
             </div>
-        </form>
+      </form>
      </div>
           <div class="weather-now">{{data.cityname}}</div>
+          <span class="temperature">{{data.temp}} <img class="icon_img" src="{{ data['icon_url'] }}" alt="Weather Icon"></span>
       <div class="temperature-feelslike">
-        <span class="temperature">{{data.temp}} <img class="icon_img" src="{{ data['icon_url'] }}" alt="Weather Icon"></span>
+        <div class="weather-description">{{data.description}}</div>
         <span class="feels-like">Feels like {{data.feels_like}}</span>
+
       </div>
-      <div class="weather-description">{{data.description}}</div>
       <div class="precip-humidity-wind">
         <span class="precip">Precip: 0%</span><br>
         <span class="humidity">Humidity: {{data.humidity}}</span><br>
