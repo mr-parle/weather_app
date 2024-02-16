@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>weather</title>
+  <link rel="stylesheet" href="static\styles\styles.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  
+   
+    <form method="post" class="col-md-6 col-md-offset-3">
+      <div class="input-group">
+        
+        </div>
+      </div>
+    <form>
+    
+    <div class="weather-container">
+      <form method="post" class="col-md-6 col-md-offset-3">
+          <div class="input-group">
+            <input type="text" class="form-control" name="city" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-primary" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+        </form>
+     </div>
+          <div class="weather-now">{{data.cityname}}</div>
+      <div class="temperature-feelslike">
+        <span class="temperature">{{data.temp}}</span>
+        <span class="feels-like">Feels like {{data.feels_like}}</span>
+      </div>
+      <div class="weather-description">{{data.description}}</div>
+      <div class="precip-humidity-wind">
+        <span class="precip">Precip: 0%</span><br>
+        <span class="humidity">Humidity: {{data.humidity}}</span><br>
+        <span class="wind">Wind: {{data.wind}}</span>
+        <img src="{{ data['icon_url'] }}" alt="Weather Icon">
+    
+      </div>
+    
+    
+  </div>
+</body>
+
+</html>
