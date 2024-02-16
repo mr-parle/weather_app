@@ -18,9 +18,6 @@ def weather():
     api_key = 'da5e53a1de645f10d9bc24d45884d83f'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     
-    # URL for weather icon
-    icon = list_of_data['weather']['0']['icon']
-    url_icon = f'https://openweathermap.org/img/wn/{icon}.png'
     
     # Fetching data from the API
     source = urllib.request.urlopen(url).read()
@@ -28,6 +25,10 @@ def weather():
     # Converting JSON data to a dictionary
     list_of_data = json.loads(source)
 
+    # URL for weather icon
+    icon = list_of_data['weather'][0]['icon']
+    url_icon = f'https://openweathermap.org/img/wn/{icon}.png'
+    
    # Convert temperature from Kelvin to Celsius
     temperature_kelvin = list_of_data['main']['temp']
     temperature_celsius = temperature_kelvin - 273.15
@@ -56,7 +57,7 @@ def weather():
         "temp_max": str(round(temperature_celsius, 1)) + '°C',
         "description": str((list_of_data['weather'][0]['description'])).capitalize(), 
         "wind": str(list_of_data['wind']['speed'])+ ' km/h', 
-        "icon": str((list_of_data['weather']['0']['icon'])),
+        "icon": str((list_of_data['weather'][0]['icon'])),
         "icon_url": url_icon,
     } 
     print(data) 

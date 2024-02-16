@@ -5,6 +5,7 @@
     margin: 0 auto;
     font-family: Arial, sans-serif;
     position: relative;
+    background: #c6c1c1;
   }
   
   .location {
@@ -71,7 +72,12 @@
   
   .precip,
   .humidity,
-  .wind {
+  .wind,
+  .icon {
     margin-bottom: 5px;
     margin: right 35px;
   }
+.icon_img{
+margin-bottom: 5px;
+transform: scale(1.2);
+}

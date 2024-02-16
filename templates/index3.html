@@ -39,7 +39,7 @@
      </div>
           <div class="weather-now">{{data.cityname}}</div>
       <div class="temperature-feelslike">
-        <span class="temperature">{{data.temp}}</span>
+        <span class="temperature">{{data.temp}} <img class="icon_img" src="{{ data['icon_url'] }}" alt="Weather Icon"></span>
         <span class="feels-like">Feels like {{data.feels_like}}</span>
       </div>
       <div class="weather-description">{{data.description}}</div>
@@ -47,7 +47,8 @@
         <span class="precip">Precip: 0%</span><br>
         <span class="humidity">Humidity: {{data.humidity}}</span><br>
         <span class="wind">Wind: {{data.wind}}</span>
-        <img src="{{ data['icon_url'] }}" alt="Weather Icon">
+        
+        
     
       </div>
     
